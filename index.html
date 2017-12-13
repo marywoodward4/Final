@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> net art </title>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--this is from https://github.com/szimek/signature_pad-->
+        <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+        <style>
+        h1{font-family: "Comic Sans MS", cursive, sans-serif;}
+        p{font-family:"Comic Sans MS", cursive, sans-serif}
+        canvas {
+                position: relative;
+                /*top:0px;*/
+                /*left:0px;*/
+                background-color: white;
+            }
+            .legend{
+              height: 100vh;
+              width:10vw;
+              top:0;
+              left:0;
+              z-index: 10000000000;
+              background-color: black;
+              position: fixed;
+              color:white;
+              padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="legend">
+        <h1><u>Color Key!</u></h1>
+        <p>Press "command s" to save your drawing!</p>
+        <p style="color:#FFFFFF ">L Key is Black</p>
+        <p style="color:#FF0000 ">R Key is Red</p>
+        <p style="color:#0000FF ">B Key is Blue</p>
+        <p style="color:#00FF00 ">G Key is Green</p>
+        <p style="color:#FFFF00 ">Y Key is Yellow</p>
+        <p style="color:#FF6347 ">O Key is Orange</p>
+        <p style="color:#AB00E8 ">V Key is Purple</p>
+        <p style="color:#E87AD9 ">P Key is Pink</p>
+        <p style="color:#D3D3D3 ">E Key is Grey</p>
+        <p style="color:#A52A2A ">W Key is Brown</p>
+        <p style="color:#40e0d0 ">C Key is Light Blue</p>
+
+
+
+
+
+      </div>
+        <canvas id="main-canvas" width="" height="500"></canvas>
+        <script src="main.js"></script>
+    </body>
+</html>
+
+<!--  !important-->
